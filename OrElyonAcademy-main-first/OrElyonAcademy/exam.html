@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrElyon Academy - 7th Grade Algebra Exam</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/checkLogin.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <style>
+        .correct { color: green; }
+        .incorrect { color: red; }
+        .correct-answer { font-weight: bold; }
+        .question-container { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="OrElyon Academy Logo" class="logo">
+            <span class="academy-name">OrElyon Academy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="practice.html">Practice </a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+      <div id="exam-container">
+        <div id="timer">Time Remaining: 60:00</div>
+        <div id="lockdown-status">Lockdown Mode: Active</div>
+        <div id="window-leaves">Window Leaves: 0</div>
+
+        <form id="exam-form">
+            <h2>7th Grade Algebra Exam</h2>
+
+            
+            <div class="question-container">
+                <label>1. Fill in the blank: Solve for x: x + 5 = 12</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+
+            <div class="question-container">
+                <label>2. Which value of y makes this equation true? 3y - 2 = 13</label>
+                <div class="choice">
+                    <input type="radio" id="q2a" name="q2" value="3">
+                    <label for="q2a">3</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q2b" name="q2" value="4">
+                    <label for="q2b">4</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q2c" name="q2" value="5">
+                    <label for="q2c">5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q2d" name="q2" value="6">
+                    <label for="q2d">6</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>3. Fill in the blank: Solve for z: z - 8 = 15</label>
+                <input type="text" id="q3" name="q3">
+            </div>
+
+            <div class="question-container">
+                <label>4. Solve for x: 2x = 14</label>
+                <div class="choice">
+                    <input type="radio" id="q4a" name="q4" value="5">
+                    <label for="q4a">5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q4b" name="q4" value="6">
+                    <label for="q4b">6</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q4c" name="q4" value="7">
+                    <label for="q4c">7</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q4d" name="q4" value="8">
+                    <label for="q4d">8</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>5. Fill in the blank: In the equation 4x = 20, x equals _____</label>
+                <input type="text" id="q5" name="q5">
+            </div>
+
+            <div class="question-container">
+                <label>6. Which value of y satisfies this inequality? 2(y + 3) > 10 </label>
+                <div class="choice">
+                    <input type="radio" id="q6a" name="q6" value="6">
+                    <label for="q6a">2</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q6b" name="q6" value="7">
+                    <label for="q6b">4</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q6c" name="q6" value="8">
+                    <label for="q6c">0.5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q6d" name="q6" value="9">
+                    <label for="q6d">-4</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>7. Fill in the blank: Solve for x: 3x + 4 = 19</label>
+                <input type="text" id="q7" name="q7">
+            </div>
+
+            <div class="question-container">
+                <label>8. Which value of y makes this equation true? 5y - 7 = 23</label>
+                <div class="choice">
+                    <input type="radio" id="q8a" name="q8" value="5">
+                    <label for="q8a">5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q8b" name="q8" value="6">
+                    <label for="q8b">6</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q8c" name="q8" value="7">
+                    <label for="q8c">7</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q8d" name="q8" value="8">
+                    <label for="q8d">8</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>9. Fill in the blank: Solve for z: 2z + 5 = 17</label>
+                <input type="text" id="q9" name="q9">
+            </div>
+
+            <div class="question-container">
+                <label>10. Solve for x: 4x - 3 = 21</label>
+                <div class="choice">
+                    <input type="radio" id="q10a" name="q10" value="5">
+                    <label for="q10a">5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q10b" name="q10" value="6">
+                    <label for="q10b">6</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q10c" name="q10" value="7">
+                    <label for="q10c">7</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q10d" name="q10" value="8">
+                    <label for="q10d">8</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>11. Fill in the blank: In the equation 3x - 6 = 15, x equals _____</label>
+                <input type="text" id="q11" name="q11">
+            </div>
+
+            <div class="question-container">
+                <label>12. Which inequality represents "5 less than a number is greater than 20"?</label>
+                <div class="choice">
+                    <input type="radio" id="q12a" name="q12" value="x - 5 > 20">
+                    <label for="q12a">x - 5 > 20</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q12b" name="q12" value="x + 5 > 20">
+                    <label for="q12b">x + 5 > 20</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q12c" name="q12" value="5 - x > 20">
+                    <label for="q12c">5 - x > 20</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q12d" name="q12" value="20 - x > 5">
+                    <label for="q12d">20 - x > 5</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>13. Fill in the blank: Solve for y: 2(y + 3) = 14</label>
+                <input type="text" id="q13" name="q13">
+            </div>
+
+            <div class="question-container">
+                <label>14. Which value of x satisfies this inequality? 3x - 2 ≤ 13</label>
+                <div class="choice">
+                    <input type="radio" id="q14a" name="q14" value="4">
+                    <label for="q14a">4</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q14b" name="q14" value="5">
+                    <label for="q14b">5</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q14c" name="q14" value="6">
+                    <label for="q14c">6</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q14d" name="q14" value="7">
+                    <label for="q14d">7</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>15. Fill in the blank: Solve for a: 4(a - 1) = 24</label>
+                <input type="text" id="q15" name="q15">
+            </div>
+
+            <div class="question-container">
+                <label>16. Which equation represents "6 more than twice a number is 30"?</label>
+                <div class="choice">
+                    <input type="radio" id="q16a" name="q16" value="2x + 6 = 30">
+                    <label for="q16a">2x + 6 = 30</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q16b" name="q16" value="2x - 6 = 30">
+                    <label for="q16b">2x - 6 = 30</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q16c" name="q16" value="2(x + 6) = 30">
+                    <label for="q16c">2(x + 6) = 30</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q16d" name="q16" value="2(x - 6) = 30">
+                    <label for="q16d">2(x - 6) = 30</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>17. Fill in the blank: Solve for x: 2(x + 3) - 5 = 11</label>
+                <input type="text" id="q17" name="q17">
+            </div>
+
+            <div class="question-container">
+                <label>18. Which value of y satisfies this inequality? 3(y - 2) > 15</label>
+                <div class="choice">
+                    <input type="radio" id="q18a" name="q18" value="6">
+                    <label for="q18a">6</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q18b" name="q18" value="7">
+                    <label for="q18b">7</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q18c" name="q18" value="8">
+                    <label for="q18c">8</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q18d" name="q18" value="9">
+                    <label for="q18d">5</label>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <label>19. Fill in the blank: Solve for z: 5(z + 1) = 7(z + 5)</label>
+                <input type="text" id="q19" name="q19">
+            </div>
+
+            <div class="question-container">
+                <label>20. Which equation represents the following word problem? "The sum of three consecutive integers is 51. Find the smallest integer."</label>
+                <div class="choice">
+                    <input type="radio" id="q20a" name="q20" value="x + (x+1) + (x+2) = 51">
+                    <label for="q20a">x + (x+1) + (x+2) = 51</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q20b" name="q20" value="3x = 51">
+                    <label for="q20b">3x = 51</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q20c" name="q20" value="x + x + x = 51">
+                    <label for="q20c">x + x + x = 51</label>
+                </div>
+                <div class="choice">
+                    <input type="radio" id="q20d" name="q20" value="(x-1) + x + (x+1) = 51">
+                    <label for="q20d">(x-1) + x + (x+1) = 51</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-button" onclick="submitExam()">Submit Exam</button>
+        </form>
+
+        <div id="score-container" style="display:none;">
+            <h2>Your Score</h2>
+            <p id="score"></p>
+            <div id="feedback"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OrElyon Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
